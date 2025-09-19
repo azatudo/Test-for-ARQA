@@ -13,6 +13,7 @@
     "close": "Close"
   },
   "customers": {
+    "title": "Customers",
     "searchPlaceholder": "Search by name...",
     "cityFilterPlaceholder": "Filter by city...",
     "orders": "Orders",

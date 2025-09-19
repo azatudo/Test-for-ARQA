@@ -13,6 +13,7 @@
     "close": "Закрыть"
   },
   "customers": {
+    "title": "Клиенты",
     "searchPlaceholder": "Поиск по имени...",
     "cityFilterPlaceholder": "Фильтр по городу...",
     "orders": "Заказы",

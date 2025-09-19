@@ -42,8 +42,7 @@ export default function SettingsPage() {
 
   return (
     <div className="flex flex-col gap-4 max-w-md">
-      <h1 className="text-2xl font-bold">{t('Settings') || 'Settings'}</h1>
-
+      <h1 className="text-2xl font-bold">{t("settings.title")}</h1>
       <Card className="p-4 flex flex-col gap-4">
         {/* Theme toggle */}
         <div className="flex justify-between items-center">

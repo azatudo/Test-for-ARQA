@@ -35,8 +35,7 @@ export default function CustomersPage() {
 
   return (
     <div className="flex flex-col gap-4">
-      <h1 className="text-2xl font-bold">{t('Customers') || 'Customers'}</h1>
-
+    <h1 className="text-2xl font-bold">{t("customers.title")}</h1>
       <div className="flex gap-2">
         <Input
           placeholder={t('customers.searchPlaceholder')}
