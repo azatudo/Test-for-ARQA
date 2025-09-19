@@ -1,7 +1,7 @@
-import { redirect } from 'next/navigation';
+// /app/page.tsx
+import { redirect } from "next/navigation";
 
 export default function HomePage() {
-  redirect('/dashboard');
-
-  return null;
+  // Если нужно сразу на /dashboard без добавления локали
+  redirect("/dashboard");
 }
