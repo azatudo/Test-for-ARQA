@@ -1,16 +1,16 @@
-"use client";
+'use client';
 
-import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 import {
   Dialog,
   DialogTrigger,
   DialogContent,
   DialogTitle,
   DialogClose,
-} from "@/components/ui/dialog";
-import { useTranslation } from "react-i18next";
-import { Order } from "@/types";
+} from '@/components/ui/dialog';
+import { useTranslation } from 'react-i18next';
+import { Order } from '@/types';
 
 interface OrdersTableProps {
   orders: Order[];
@@ -27,7 +27,7 @@ export function OrdersTable({ orders, onSort }: OrdersTableProps) {
       <table className="w-full table-auto border-collapse">
         <thead>
           <tr>
-            {["id", "date", "customerId", "city", "channel", "status", "total"].map((col) => (
+            {['id', 'date', 'customerId', 'city', 'channel', 'status', 'total'].map((col) => (
               <th
                 key={col}
                 className="border-b px-4 py-2 text-left cursor-pointer"
@@ -36,7 +36,7 @@ export function OrdersTable({ orders, onSort }: OrdersTableProps) {
                 {t(`orders.${col}`) || col.toUpperCase()}
               </th>
             ))}
-            <th className="border-b px-4 py-2">{t("orders.details")}</th>
+            <th className="border-b px-4 py-2">{t('orders.details')}</th>
           </tr>
         </thead>
         <tbody>
@@ -52,11 +52,13 @@ export function OrdersTable({ orders, onSort }: OrdersTableProps) {
               <td className="border px-4 py-2">
                 <Dialog>
                   <DialogTrigger asChild>
-                    <Button size="sm" variant="ghost">{t("orders.details")}</Button>
+                    <Button size="sm" variant="ghost">
+                      {t('orders.details')}
+                    </Button>
                   </DialogTrigger>
                   <DialogContent className="max-w-md">
                     <DialogTitle>
-                      {t("orders.order")} {order.id}
+                      {t('orders.order')} {order.id}
                     </DialogTitle>
                     <ul className="mt-2 list-disc list-inside">
                       {order.items.map((item) => (
@@ -67,11 +69,11 @@ export function OrdersTable({ orders, onSort }: OrdersTableProps) {
                     </ul>
                     {order.comment && (
                       <p className="mt-2 text-sm">
-                        {t("orders.comment")}: {order.comment}
+                        {t('orders.comment')}: {order.comment}
                       </p>
                     )}
                     <DialogClose asChild>
-                      <Button className="mt-4 w-full">{t("orders.close")}</Button>
+                      <Button className="mt-4 w-full">{t('orders.close')}</Button>
                     </DialogClose>
                   </DialogContent>
                 </Dialog>

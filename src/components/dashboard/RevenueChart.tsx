@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
+import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
 interface RevenueChartProps {
   data: { day: string; revenue: number }[];

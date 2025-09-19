@@ -1,22 +1,22 @@
-"use client";
+'use client';
 
-import * as React from "react";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import customersData from "@/data/customers.json";
-import { useCsvExport } from "@/hooks/useCsvExport";
-import { useTranslation } from "react-i18next";
+import * as React from 'react';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
+import customersData from '@/data/customers.json';
+import { useCsvExport } from '@/hooks/useCsvExport';
+import { useTranslation } from 'react-i18next';
 
-import { CustomerCard } from "@/components/customers/CustomerCard";
-import { CustomerDialog } from "@/components/customers/CustomerDialog";
-import { Customer } from "@/types";
+import { CustomerCard } from '@/components/customers/CustomerCard';
+import { CustomerDialog } from '@/components/customers/CustomerDialog';
+import { Customer } from '@/types';
 
 const customers: Customer[] = (customersData as { customers: Customer[] }).customers;
 
 export default function CustomersPage() {
   const { t } = useTranslation();
-  const [search, setSearch] = React.useState("");
-  const [cityFilter, setCityFilter] = React.useState("");
+  const [search, setSearch] = React.useState('');
+  const [cityFilter, setCityFilter] = React.useState('');
 
   const filteredCustomers = customers
     .filter((c) => c.name.toLowerCase().includes(search.toLowerCase()))
@@ -35,27 +35,27 @@ export default function CustomersPage() {
 
   return (
     <div className="flex flex-col gap-4">
-      <h1 className="text-2xl font-bold">{t("Customers") || "Customers"}</h1>
+      <h1 className="text-2xl font-bold">{t('Customers') || 'Customers'}</h1>
 
       <div className="flex gap-2">
         <Input
-          placeholder={t("customers.searchPlaceholder")}
+          placeholder={t('customers.searchPlaceholder')}
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
         <Input
-          placeholder={t("customers.cityFilterPlaceholder")}
+          placeholder={t('customers.cityFilterPlaceholder')}
           value={cityFilter}
           onChange={(e) => setCityFilter(e.target.value)}
         />
       </div>
 
       <Button
-        onClick={() => exportToCsv("customers.csv", csvData)}
+        onClick={() => exportToCsv('customers.csv', csvData)}
         variant="secondary"
         className="mb-2"
       >
-        {t("dashboard.exportCsv")}
+        {t('dashboard.exportCsv')}
       </Button>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

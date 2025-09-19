@@ -1,16 +1,16 @@
-"use client";
+'use client';
 
-import * as React from "react";
-import { Button } from "@/components/ui/button";
-import ordersData from "@/data/orders.json";
-import { useCsvExport } from "@/hooks/useCsvExport";
-import { useTranslation } from "react-i18next";
-import { OrdersTable } from "@/components/orders/OrdersTable";
-import { Order } from "@/types";
+import * as React from 'react';
+import { Button } from '@/components/ui/button';
+import ordersData from '@/data/orders.json';
+import { useCsvExport } from '@/hooks/useCsvExport';
+import { useTranslation } from 'react-i18next';
+import { OrdersTable } from '@/components/orders/OrdersTable';
+import { Order } from '@/types';
 
 export default function OrdersPage() {
   const { t } = useTranslation();
-  const [search, setSearch] = React.useState("");
+  const [search, setSearch] = React.useState('');
   const [sortField, setSortField] = React.useState<keyof Order | null>(null);
   const [sortAsc, setSortAsc] = React.useState(true);
 
@@ -23,7 +23,7 @@ export default function OrdersPage() {
       (o) =>
         o.id.toLowerCase().includes(search.toLowerCase()) ||
         o.city.toLowerCase().includes(search.toLowerCase()) ||
-        o.customerId.toLowerCase().includes(search.toLowerCase())
+        o.customerId.toLowerCase().includes(search.toLowerCase()),
     );
     if (sortField) {
       result = result.sort((a, b) => {
@@ -60,7 +60,7 @@ export default function OrdersPage() {
       {/* Поиск */}
       <div className="flex gap-2">
         <input
-          placeholder={t("orders.searchPlaceholder")}
+          placeholder={t('orders.searchPlaceholder')}
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           className="p-2 border rounded flex-1"
@@ -69,11 +69,11 @@ export default function OrdersPage() {
 
       {/* Кнопка Export CSV */}
       <Button
-        onClick={() => exportToCsv("orders.csv", csvData)}
+        onClick={() => exportToCsv('orders.csv', csvData)}
         variant="secondary"
         className="mb-2"
       >
-        {t("dashboard.exportCsv")}
+        {t('dashboard.exportCsv')}
       </Button>
 
       {/* Таблица заказов */}
