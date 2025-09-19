@@ -1,0 +1,37 @@
+{
+  "dashboard": {
+    "revenue": "Доход",
+    "orders": "Заказы",
+    "aov": "Средняя стоимость заказа",
+    "conversionRate": "Конверсия",
+    "revenueOverWeek": "Доход за неделю",
+    "exportCsv": "Экспорт CSV"
+  },
+  "orders": {
+    "searchPlaceholder": "Поиск по ID заказа, городу, клиенту...",
+    "details": "Детали",
+    "close": "Закрыть"
+  },
+  "customers": {
+    "searchPlaceholder": "Поиск по имени...",
+    "cityFilterPlaceholder": "Фильтр по городу...",
+    "orders": "Заказы",
+    "ltv": "LTV",
+    "close": "Закрыть"
+  },
+  "settings": {
+    "title": "Настройки",
+    "theme": "Тема",
+    "language": "Язык",
+    "light": "Светлая",
+    "dark": "Тёмная",
+    "english": "Английский",
+    "russian": "Русский"
+  },
+  "sidebar": {
+    "dashboard": "Дашборд",
+    "orders": "Заказы",
+    "customers": "Клиенты",
+    "settings": "Настройки"
+  }
+}

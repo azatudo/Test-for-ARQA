@@ -1,0 +1,28 @@
+{
+  "customers": [
+    {
+      "id": "CUS-001",
+      "name": "Aigerim K.",
+      "email": "aigerim@example.com",
+      "city": "Алматы",
+      "ltv": 245000,
+      "ordersCount": 6
+    },
+    {
+      "id": "CUS-002",
+      "name": "Daniyar T.",
+      "email": "daniyar@example.com",
+      "city": "Астана",
+      "ltv": 83200,
+      "ordersCount": 3
+    },
+    {
+      "id": "CUS-003",
+      "name": "Zhanna S.",
+      "email": "zhanna@example.com",
+      "city": "Шымкент",
+      "ltv": 45000,
+      "ordersCount": 1
+    }
+  ]
+}

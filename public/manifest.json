@@ -1,0 +1,21 @@
+{
+  "name": "ARQA Mini Analytics",
+  "short_name": "ARQA Analytics",
+  "description": "Мини-приложение для аналитики заказов и клиентов",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

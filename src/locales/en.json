@@ -1,0 +1,37 @@
+{
+  "dashboard": {
+    "revenue": "Revenue",
+    "orders": "Orders",
+    "aov": "Average Order Value",
+    "conversionRate": "Conversion Rate",
+    "revenueOverWeek": "Revenue over the week",
+    "exportCsv": "Export CSV"
+  },
+  "orders": {
+    "searchPlaceholder": "Search by Order ID, City, Customer ID...",
+    "details": "Details",
+    "close": "Close"
+  },
+  "customers": {
+    "searchPlaceholder": "Search by name...",
+    "cityFilterPlaceholder": "Filter by city...",
+    "orders": "Orders",
+    "ltv": "LTV",
+    "close": "Close"
+  },
+  "settings": {
+    "title": "Settings",
+    "theme": "Theme",
+    "language": "Language",
+    "light": "Light",
+    "dark": "Dark",
+    "english": "English",
+    "russian": "Russian"
+  },
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "orders": "Orders",
+    "customers": "Customers",
+    "settings": "Settings"
+  }
+}
